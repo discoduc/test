@@ -34,6 +34,7 @@ class BusinessObjectsController < ApplicationController
     end
   end
 
+  #
   # GET /business_objects/1/edit
   def edit
     @business_object = BusinessObject.find(params[:id])
