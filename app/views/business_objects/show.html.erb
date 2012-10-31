@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @business_object.Title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @business_object.Description %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @business_object.Category %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @business_object.Price %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @business_object.Notes %>
+</p>
+
+<p>
+  <b>Deliverydate:</b>
+  <%= @business_object.DeliveryDate %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @business_object.Owner %>
+</p>
+
+
+<%= link_to 'Edit', edit_business_object_path(@business_object) %> |
+<%= link_to 'Back', business_objects_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  Title: MyString
+  Description: MyString
+  Category: MyString
+  Price: 1
+  Notes: MyText
+  DeliveryDate: 2012-10-28
+  Owner: MyString
+
+two:
+  Title: MyString
+  Description: MyString
+  Category: MyString
+  Price: 1
+  Notes: MyText
+  DeliveryDate: 2012-10-28
+  Owner: MyString

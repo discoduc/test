@@ -1,0 +1,35 @@
+<h1>Listing business_objects</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Category</th>
+    <th>Price</th>
+    <th>Notes</th>
+    <th>Deliverydate</th>
+    <th>Owner</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @business_objects.each do |business_object| %>
+  <tr>
+    <td><%= business_object.Title %></td>
+    <td><%= business_object.Description %></td>
+    <td><%= business_object.Category %></td>
+    <td><%= business_object.Price %></td>
+    <td><%= business_object.Notes %></td>
+    <td><%= business_object.DeliveryDate %></td>
+    <td><%= business_object.Owner %></td>
+    <td><%= link_to 'Show', business_object %></td>
+    <td><%= link_to 'Edit', edit_business_object_path(business_object) %></td>
+    <td><%= link_to 'Destroy', business_object, :method => :delete, :data => { :confirm => 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Business object', new_business_object_path %>

@@ -1,0 +1,2 @@
+module BusinessObjectsHelper
+end
